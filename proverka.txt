@@ -1,0 +1,319 @@
+
+Admin@DESKTOP-59VI7V2 MINGW64 ~
+$ ls
+'3D Objects'/
+ AndroidStudioProjects/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ OpenVPN/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Tracing/
+ Videos/
+ ansel/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ source/
+'Мои документы'@
+'Новая папка'/
+ Шаблоны@
+'главное меню'@
+
+Admin@DESKTOP-59VI7V2 MINGW64 ~
+$ md d: \tmp
+bash: md: command not found
+
+Admin@DESKTOP-59VI7V2 MINGW64 ~
+$ md d:\tmp
+bash: md: command not found
+
+Admin@DESKTOP-59VI7V2 MINGW64 ~
+$ md "d;\tmp"
+bash: md: command not found
+
+Admin@DESKTOP-59VI7V2 MINGW64 ~
+$ ch /f/tmp/
+bash: ch: command not found
+
+Admin@DESKTOP-59VI7V2 MINGW64 ~
+$ cd /f/tmp/
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/tmp
+$ pwd
+/f/tmp
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/tmp
+$ git config --global user.name "Александр Носков"
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/tmp
+$ git config --global user.email "a_a_noskov@mail.ru"
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/tmp
+$ git init
+Initialized empty Git repository in F:/tmp/.git/
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/tmp (master)
+$ ls -a
+./  ../  .git/
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/tmp (master)
+$ cd /f/GitRepo/tmp
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ pwd
+/f/GitRepo/tmp
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ ls -a
+./  ../  .git/
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git add README.txt
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git commit -m "Добавлен файл README"
+[master (root-commit) cbe8931] Добавлен файл README
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.txt
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git add README.txt
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.txt
+
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git commit -m "Изменения в README"
+[master d35d9a3] Изменения в README
+ 1 file changed, 1 insertion(+)
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git log
+commit d35d9a32d9d4eadf159a7b350611b44390078953 (HEAD -> master)
+Author: Александр Носков <a_a_noskov@mail.ru>
+Date:   Mon Apr 7 19:33:39 2025 +0300
+
+    Изменения в README
+
+commit cbe8931af6d5fe2698f2cb6f17b17602c43bb881
+Author: Александр Носков <a_a_noskov@mail.ru>
+Date:   Mon Apr 7 19:31:50 2025 +0300
+
+    Добавлен файл README
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git add README.txt
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git add test.txt
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.txt
+        new file:   test.txt
+
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git commit -m "Текстовый коммит с 2 изменениями"
+[master 960be01] Текстовый коммит с 2 изменениями
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 test.txt
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git log
+commit 960be0108ba68199cc3b03f95915b17d374804ea (HEAD -> master)
+Author: Александр Носков <a_a_noskov@mail.ru>
+Date:   Mon Apr 7 19:35:21 2025 +0300
+
+    Текстовый коммит с 2 изменениями
+
+commit d35d9a32d9d4eadf159a7b350611b44390078953
+Author: Александр Носков <a_a_noskov@mail.ru>
+Date:   Mon Apr 7 19:33:39 2025 +0300
+
+    Изменения в README
+
+commit cbe8931af6d5fe2698f2cb6f17b17602c43bb881
+Author: Александр Носков <a_a_noskov@mail.ru>
+Date:   Mon Apr 7 19:31:50 2025 +0300
+
+    Добавлен файл README
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ git clone https://github.com/42dall52/GitTestShalaev.git GitRepo
+Cloning into 'GitRepo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ pwd
+/f/GitRepo/tmp
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp (master)
+$ cd /f/GitRepo/tmp/test
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp/test (main)
+$ git remote -v
+origin  https://github.com/42dall52/GitTestShalaev.git (fetch)
+origin  https://github.com/42dall52/GitTestShalaev.git (push)
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp/test (main)
+$ git gstatus
+git: 'gstatus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp/test (main)
+$ git add Hello.txt
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp/test (main)
+$ git commit -m "Hello"
+[main d137473] Hello
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Hello.txt
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp/test (main)
+$ git push
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 316 bytes | 316.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/42dall52/GitTestShalaev.git
+   ca959cd..d137473  main -> main
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp/test (main)
+$ git clone https://github.com/42dall52/GitTestShalaev.git Proverkaa
+Cloning into 'Proverkaa'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp/test (main)
+$ ^C
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp/test (main)
+$ git add proverka.txt
+fatal: pathspec 'proverka.txt' did not match any files
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp/test (main)
+$ git commit -m "Индивидуальное задание"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Proverkaa/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp/test (main)
+$ cd /f/GitRepo/tmp/test/Proverkaa
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp/test/Proverkaa (main)
+$ pwd
+/f/GitRepo/tmp/test/Proverkaa
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp/test/Proverkaa (main)
+$ git add proverka.txt
+
+Admin@DESKTOP-59VI7V2 MINGW64 /f/GitRepo/tmp/test/Proverkaa (main)
+$ git commit -m "Индивид Задание"
+[main 71f181c] Индивид Задание
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 proverka.txt
+
+Admin
